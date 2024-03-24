@@ -1,3 +1,5 @@
+$(function(){
+
 // 문서가 로드되면 실행될 함수
 document.addEventListener("DOMContentLoaded", function() {
     // 모든 a 태그를 가져옴
@@ -14,4 +16,29 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
     });
+});
+// Header 배경 변경
+const headerObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        const sectionId = entry.target.id;
+        // 섹션이 화면에 진입한 경우 배경색 변경
+        if (entry.intersectionRatio >= 0.2) {
+            switch (sectionId) {
+                case "profile":
+                    $(".header").css({
+                        "background-color": "#e4efff50",
+                        "transition": "all 0.6s"
+                    });// 배경색 변경
+                    break;
+                default:
+                    $(".header").css({
+                        "background-color": "inherit",
+                        "transition": "all 0.6s"
+                    });// 기본 배경색
+            }
+        }
+    });
+}, { threshold: 0.2 });// 20% 영역에 진입하면 콜백 호출
+
+
 });

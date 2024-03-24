@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- header -->
-    <header>
+    <header class="header">
         <nav>
             <ul>
                 <li><a href="#main">main</a>
@@ -24,12 +24,21 @@
                 </li>
                 <li><a href="#works">works</a>
                 </li>
-                <li><a href="#none">works2</a>
+                <!-- <li><a href="#none">works2</a>
                 </li>
                 <li><a href="#none">works3</a>
-                </li>
+                </li> -->
             </ul>
         </nav>
+        <div class="btn-wrap">
+            <button>
+                <span class="span-wrap">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </span>
+            </button>
+        </div>
     </header>
     <!-- //header -->
 
@@ -37,13 +46,12 @@
     <main id="main">
         <section class="main-title container">
             <div class="main-text">
-                <span></span> <!-- event 영역을 위한 span-->
                 <h1> <em>GRIT</em> 목표달성을 위해 노력하는 열정 </h1>
                 <p>안녕하십니까 퍼블리셔 이태환입니다.</p>
             </div> 
         </section>
         <aside class="profileImg">
-            <img src="./img/profile01_2.png" alt="프로필 이미지">
+            <img src="./img/profile(2).png" alt="프로필 이미지">
         </aside>
     </main>
     <!-- //메인 -->
@@ -74,16 +82,18 @@
             </div>
             <div class="left-con2">
                 <div class="left-text">
-                    <em>이력서 키워드</em>
-                    <p>이력서 내 키워드 문장</p>
+                    <em>성실성과 책임감</em>
+                    <p>자신의 맡은바를 최선을 다하겠습니다.</p>
                 </div>
                 <div class="left-text">
-                    <em>이력서 키워드</em>
-                    <p>이력서 내 키워드 문장</p>
+                    <em>확실한 피드백</em>
+                    <p>문제상황 파악과 해결을 위한 빠른판단과
+                        피드백 수용
+                    </p>
                 </div>
                 <div class="left-text">
-                    <em>이력서 키워드</em>
-                    <p>이력서 내 키워드 문장</p>
+                    <em>커뮤니케이션 능력</em>
+                    <p>다양한 조건속에서 적절한 대화능력 겸비</p>
                 </div>
             </div>
         </section>
@@ -120,47 +130,55 @@
             <button class="Lbtn"><img src="./img/icon/left-btn.svg" alt="left-btn"></button>
             <button class="Rbtn"><img src="./img/icon/right-btn.svg" alt="right-btn"></button>
             <div class="case" id="case1">
-                <img src="./img/sum/sebang.png" alt="세방리디자인 반응형">
+                <div class="view">
+                    <img src="./img/sum/sebang.png" alt="세방리디자인 반응형">
+                    <div class="text-wrap">
+                        <a href="https://legrit9703.github.io/sebang.github.io/" target="_blank">홈페이지 보기</a>
+                        <a href="#none">기획서 보기</a>
+                    </div>
+                </div>
                 <div class="case-text">
                     <strong>(주)세방그룹</strong>
                     <p>반응현 웹 리디자인<br>(수정중)</p>
                 </div>
-                <div class="view">
-                    <a href="https://legrit9703.github.io/sebang.github.io/" target="_blank">홈페이지 보기</a>
-                    <a href="#none">기획서 보기</a>
-                </div>
             </div>
             <div class="case" id="case2">
-                <img src="./img/sum/rise_.png" alt="반응형웹 썸네일">
+                <div class="view">
+                    <img src="./img/sum/rise_.png" alt="반응형웹 썸네일">
+                    <div class="text-wrap">
+                        <a href="https://rise-responsiveweb.netlify.app/" target="_blank">홈페이지 보기</a>
+                        <a href="RISE-responsive-web-redesign.html" target="_blank">기획서 보기</a>
+                    </div>
+                </div>
                 <div class="case-text">
                     <strong>RISE</strong>
                     <p>대구청년센터 반응형 웹사이트 <br>리디자인</p>
                 </div>
-                <div class="view">
-                    <a href="https://rise-responsiveweb.netlify.app/" target="_blank">홈페이지 보기</a>
-                    <a href="https://drive.google.com/file/d/1jQ1g96Z6kW0Q-We_HbMdixHSAgnL-tDV/view?usp=sharing" target="_blank">기획서 보기</a>
-                </div>
             </div>
             <div class="case" id="case3">
-                <img src="./img/sum/cineq.jpg" alt="임시 썸네일">
+                <div class="view">
+                    <img src="./img/sum/meta.png" alt="씨네큐 메타버스 홈페이지">
+                    <div class="text-wrap">
+                        <a href="https://meta-moviesite.netlify.app/" target="_blank">홈페이지 보기</a>
+                        <a href="CINEQ-metaverse-web.html" target="_blank">기획서 보기</a>
+                    </div>    
+                </div>
                 <div class="case-text">
                     <strong>CINE Q</strong>
                     <p>메타버스 공간 구현 웹 사이트</p>
                 </div>
-                <div class="view">
-                    <a href="https://meta-moviesite.netlify.app/" target="_blank">홈페이지 보기</a>
-                    <a href="https://drive.google.com/file/d/1E958fjJIGEBz5Xn1h-65rGPpqerw-wiZ/view?usp=sharing" target="_blank">기획서 보기</a>
-                </div>
             </div>
             <div class="case case4" id="case4">
-                <img src="./img/sum/oneroommaker.png" alt="원룸만들기 임시썸네일">
+                <div class="view">
+                    <img src="./img/sum/oneroommaker.png" alt="원룸만들기 임시썸네일">
+                    <div class="text-wrap">
+                        <a class="opzero" href="#none">홈페이지 보기</a>
+                        <a href="Oneroomaker_Project.html" target="_blank">기획서 보기</a>
+                    </div>
+                    </div>
                 <div class="case-text">
                     <strong>원룸만들기</strong>
                     <p>앱 리디자인</p>
-                </div>
-                <div class="view">
-                    <a class="opzero" href="#none">홈페이지 보기</a>
-                    <a href="https://drive.google.com/file/d/1V6WDYG7TLnXSdgZdiIjSbOYwju-5_FgW/view?usp=sharing" target="_blank">기획서 보기</a>
                 </div>
             </div>
         </section>
